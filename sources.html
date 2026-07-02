@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAN Notables - Sources de donnees</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="sources">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="brand">PAN Notables</div>
+      <nav>
+        <ul>
+          <li><a class="nav-link" data-page="home" href="index.html">Accueil</a></li>
+          <li><a class="nav-link" data-page="cases" href="cases.html">PAN notables</a></li>
+          <li><a class="nav-link" data-page="sources" href="sources.html">Sources</a></li>
+          <li><a class="nav-link" data-page="books" href="bibliographie.html">Bibliographie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="badge">Section 2</span>
+      <h1>Sources de donnees</h1>
+      <p>
+        Liste de sites utiles pour consolider les cas, croiser les infos et recuperer des jeux de donnees.
+      </p>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h2>Institutions</h2>
+        <ul class="list-clean">
+          <li>
+            <strong>GEIPAN</strong><br />
+            Base francaise de cas PAN classes, rapports et statistiques.
+            <br /><a href="https://www.cnes-geipan.fr/" target="_blank" rel="noreferrer">Site officiel</a>
+          </li>
+          <li>
+            <strong>NORAD / archives defense US</strong><br />
+            Documentation, contexte radar et suivi aerospatial selon disponibilite publique.
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Datasets communautaires</h2>
+        <ul class="list-clean">
+          <li>
+            <strong>GitHub</strong><br />
+            Repertoires avec incidents, parsing de temoignages, geolocalisation et analyses.
+          </li>
+          <li>
+            <strong>Kaggle</strong><br />
+            Jeux de donnees prets pour exploration: dates, lieux, descriptions, classifications.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Modele de fiche source</h2>
+      <div class="card">
+        <p class="muted">Tu peux reutiliser ce format pour chaque nouvelle source:</p>
+        <ul class="list-clean">
+          <li>Nom de la source</li>
+          <li>Type de donnees (rapport, radar, temoignage, dataset CSV...)</li>
+          <li>Niveau de fiabilite percu</li>
+          <li>Lien principal</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    PAN Notables - Sources et donnees
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
