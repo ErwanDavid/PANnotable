@@ -153,6 +153,32 @@ main {
   text-align: center;
 }
 
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.book-cover {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.book-info {
+  min-width: 0;
+}
+
 h1,
 h2,
 h3 {
