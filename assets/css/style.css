@@ -153,6 +153,65 @@ main {
   text-align: center;
 }
 
+.cases-table-wrap {
+  overflow-x: auto;
+  margin-top: 1.4rem;
+}
+
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.cases-table th {
+  background: rgba(216, 182, 91, 0.12);
+  color: var(--accent-strong);
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid var(--line);
+  white-space: nowrap;
+}
+
+.cases-table td {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  color: var(--text);
+}
+
+.cases-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cases-table tr:hover td {
+  background: rgba(216, 182, 91, 0.05);
+}
+
+.case-name {
+  font-weight: 600;
+  color: var(--accent-strong);
+  min-width: 130px;
+}
+
+.case-name .case-thumb {
+  margin-bottom: 0.5rem;
+}
+
+.case-thumb {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  display: block;
+}
+
+.btn-sm {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
 .book-list {
   display: flex;
   flex-direction: column;
