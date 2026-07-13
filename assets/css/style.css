@@ -212,6 +212,23 @@ main {
   white-space: nowrap;
 }
 
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.viz-grid .case-img {
+  margin: 0;
+}
+
+.viz-grid .case-img img {
+  max-height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .book-list {
   display: flex;
   flex-direction: column;

@@ -16,6 +16,7 @@ function renderHeader() {
           <li><a class="nav-link" data-page="home"    href="${base}index.html">Accueil</a></li>
           <li><a class="nav-link" data-page="cases"   href="${base}cases.html">Liste des cas</a></li>
           <li><a class="nav-link" data-page="sources" href="${base}sources.html">Sources</a></li>
+          <li><a class="nav-link" data-page="analyse" href="${base}analyse.html">Analyse de données</a></li>
           <li><a class="nav-link" data-page="books"   href="${base}bibliographie.html">Bibliographie</a></li>
         </ul>
       </nav>
