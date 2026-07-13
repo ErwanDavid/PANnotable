@@ -15,183 +15,47 @@
       <span class="badge">Data</span>
       <h1>Analyse de données</h1>
       <p>
-        Exploration des données ufologiques par l'approche data engineering :
-        indexation, visualisation et croisement de sources hétérogènes.
+        Cette section est dédiée à l'analyse des données collectées sur les cas ufologiques.
+        Vous y trouverez des statistiques, des graphiques et des tendances basées sur les observations rapportées.
+        Les analyses sont mises à jour régulièrement pour refléter les nouvelles informations disponibles.
       </p>
     </section>
 
-    <section class="section card">
-      <h2>ufo-data-elk</h2>
-      <p class="muted">Même auteur que ce site — <a href="https://github.com/ErwanDavid/ufo-data-elk" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a></p>
-      <p>
-        Dépôt personnel dédié à l'ingestion, l'indexation et la visualisation de données sur les
+    <section class="section">
+      <div class="cases-table-wrap">
+        <table class="cases-table">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Description</th>
+              <th>Source</th>
+              <th>Lien vers l'analyse</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="case-name">Analyse des données du MUFON dans elasstic search (ELK)</td>
+              <td>Dépôt personnel dédié à l'ingestion, l'indexation et la visualisation de données sur les
         observations d'OVNIs via une stack ELK (Elasticsearch, Logstash, Kibana).
-        Les données proviennent de sources publiques (NUFORC, Kaggle) — utilisées ici à des fins d'illustration.
-      </p>
-
-      <figure class="case-img" style="margin:1rem 0;">
-        <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_map_animated.gif"
-             alt="Carte mondiale animée des observations d'OVNIs par forme" />
-        <figcaption>Carte mondiale animée — distribution géographique des observations par forme d'objet</figcaption>
-      </figure>
-
-      <h3>Formes et périodes</h3>
-      <p>
-        En croisant la forme de l'objet signalé et la date d'observation, on observe une montée nette
-        des signalements de type <em>lumière</em> depuis 2012, ainsi qu'un pic de boules de feu en 2012–2013.
-      </p>
-      <div class="viz-grid" style="margin:0.8rem 0 1rem;">
-        <figure class="case-img" style="margin:0;">
-          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo2_date_shape_heatmap.png"
-               alt="Heatmap forme / période" />
-          <figcaption>Heatmap forme × période — montée des lumières depuis 2012</figcaption>
-        </figure>
-        <figure class="case-img" style="margin:0;">
-          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_raise_fireball.png"
-               alt="Montée des boules de feu 2012-2013" />
-          <figcaption>Histogramme — pic des boules de feu en 2012–2013</figcaption>
-        </figure>
-      </div>
-
-      <h3>Signal français dans des données américaines</h3>
-      <p>
-        Même dans un corpus à dominante américaine, le pic d'observations français de 1954 est
-        clairement visible — ce qui souligne la solidité du signal ufologique cette année-là en Europe.
-      </p>
-      <figure class="case-img" style="margin:0.8rem 0 1rem;">
-        <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_france.png"
-             alt="Pic d'observations en France en 1954" />
-        <figcaption>France — pic d'observations en 1954</figcaption>
-      </figure>
-
-      <h3>Moment de la journée et forme</h3>
-      <p>
-        La heatmap heure × forme montre sans surprise que les OVNIs sont majoritairement
-        des lumières dans le ciel nocturne — ce qui peut autant refléter un biais d'observation
-        qu'un phénomène réel.
-      </p>
-      <div class="viz-grid" style="margin:0.8rem 0 1rem;">
-        <figure class="case-img" style="margin:0;">
-          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/UFO_night_in_sky.png"
-               alt="Heatmap heure du jour / forme" />
-          <figcaption>Heatmap heure × forme — lumières nocturnes majoritaires</figcaption>
-        </figure>
-        <figure class="case-img" style="margin:0;">
-          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_shape-explaination.png"
-               alt="Heatmap explication vs forme" />
-          <figcaption>Heatmap explication × forme — comment les formes sont-elles expliquées ?</figcaption>
-        </figure>
-      </div>
-
-      <h3>Sources de données utilisées</h3>
-      <ul class="list-clean">
-        <li><a href="https://nuforc.org/databank/" target="_blank" rel="noopener noreferrer">NUFORC Databank</a> — base principale de signalements civils.</li>
-        <li><a href="https://www.kaggle.com/datasets/willianoliveiragibin/ufo-sightings" target="_blank" rel="noopener noreferrer">Kaggle — UFO Sightings (willianoliveiragibin)</a></li>
-        <li><a href="https://www.kaggle.com/datasets/sahityasetu/ufo-sightings" target="_blank" rel="noopener noreferrer">Kaggle — UFO Sightings (sahityasetu)</a></li>
-      </ul>
-
-      <div class="btn-row" style="margin-top:1.2rem;">
-        <a class="btn" href="https://github.com/ErwanDavid/ufo-data-elk" target="_blank" rel="noopener noreferrer">Accéder au dépôt GitHub</a>
+        Les données proviennent de sources publiques (NUFORC, Kaggle)</td>
+              <td>Sur demande https://nuforc.org/terms/</td>
+              <td><a class="btn btn-sm" href="analyse/elk.html">Voir l'analyse</a></td>
+            </tr>
+            <tr>
+              <td class="case-name">Analyse des données Majestic MJ-12</td>
+              <td>Exploration de divers documents et rapports liés au projet Majestic 12, une initiative supposée du gouvernement américain sur les OVNIs.</td>
+              <td>https://vault.fbi.gov/Majestic%2012 ; </td>
+              <td><a class="btn btn-sm" href="analyse/majestic.html">Voir l'analyse</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
-
-    <section class="section card">
-      <h2>Analyse — Majestic Intelligence Dossier</h2>
-      <p class="muted">Synthèse générée via NotebookLM — voir la liste des sources ci-dessous.</p>
-
-      <p>
-        Cette synthèse rassemble les éléments saillants extraits du "Majestic Intelligence Dossier" et
-        d'un second document de compléments. Le dossier compile des mémos déclassifiés, des rapports
-        d'incidents et des analyses techniques. En résumé :
-      </p>
-      <ul>
-        <li>Présence répétée de mémos et briefs internes (MJ-12 / comités, rapports militaires) qui doivent être croisés pour vérification.</li>
-        <li>Plusieurs cas présentés restent non résolus — certains reposent sur des témoignages concordants, d'autres sur des documents fragmentaires.</li>
-        <li>Il existe des éléments techniques (analyses d'impact, isotopes, traces) mais ils sont rares et souvent incomplets.</li>
-        <li>La synthèse ci‑dessous reprend l'interprétation automatique proposée par NotebookLM ; elle nécessite une vérification indépendante des sources listées.</li>
-      </ul>
-
-      <div class="viz-grid" style="gap:1rem; margin:0.8rem 0 1rem;">
-        <figure class="case-img" style="margin:0;">
-          <embed src="assets/images/majestic/Majestic_Intelligence_Dossier.pdf" type="application/pdf" width="100%" height="640px"></embed>
-          <figcaption>Majestic Intelligence Dossier (PDF) — pages consultables en ligne dans le dossier local.</figcaption>
-        </figure>
-        <figure class="case-img" style="margin:0;">
-          <embed src="assets/images/majestic/Les archives d%C3%A9classifi%C3%A9es _ Ce que les rapports secrets r%C3%A9v%C3%A8lent sur les _visiteurs_.pdf" type="application/pdf" width="100%" height="640px"></embed>
-          <figcaption>Compléments — "Les archives déclassifiées" (PDF)</figcaption>
-        </figure>
-      </div>
-
-      <h3>Synthèse (extrait)</h3>
-      <p>
-        Le dossier met en lumière une accumulation de documents administratifs et de comptes rendus d'observations
-        couvrant plusieurs décennies. Les éléments les plus robustes sont des rapports techniques et des analyses
-        d'incidents localisés (crashs allégués, traces physiques) ; en revanche, une part notable des archives
-        reste basée sur des mémos internes non corroborés ou sur des résumés très sommaires. NotebookLM agrège
-        ces éléments pour produire une synthèse utile comme point de départ, mais elle ne remplace pas
-        la vérification des sources primaires listées ci‑dessous.
-      </p>
-
-      <h3>Sources (fichier : assets/images/majestic/sources.txt)</h3>
-      <p class="muted">Liste extraite telle quelle du fichier `assets/images/majestic/sources.txt` :</p>
-      <ul class="list-clean">
-        <li>AIA-DIA_Documents_1979_Bolivia_Crash.pdf</li>
-        <li>airaccidentreport.pdf</li>
-        <li>airintelrpt100-203-79.pdf</li>
-        <li>anotherlookatmajestic.pdf</li>
-        <li>bowen.pdf</li>
-        <li>burleson-mufon_0501.pdf</li>
-        <li>burnedmemo-s1-pgs1-2.pdf</li>
-        <li>burnedmemo-s1-pgs3-9.pdf</li>
-        <li>cantwheel_report.pdf</li>
-        <li>causaffidavit_091080.pdf</li>
-        <li>eisenhower_briefing.pdf</li>
-        <li>famous_quotes_pres.pdf</li>
-        <li>hillenkoetter_memo.pdf</li>
-        <li>important_memo.pdf</li>
-        <li>isotope_thermal_thrusters.pdf</li>
-        <li>joint-r&d-annexs_dec46.pdf</li>
-        <li>jrdb-securityregulations_15june47.pdf</li>
-        <li>keyhoe-truman_nicap.pdf</li>
-        <li>meteorological-r&d_18-jul47.pdf</li>
-        <li>mj12_fifthannualreport.pdf</li>
-        <li>moondust_42pages_nov73.pdf</li>
-        <li>nasa-etlife.pdf</li>
-        <li>nicap-cases.pdf</li>
-        <li>nicap-electromagneticeffects_june60.pdf</li>
-        <li>project-grudge_part1.pdf</li>
-        <li>project-grudge_part2.pdf</li>
-        <li>project-grudge_part3.pdf</li>
-        <li>project-grudge_part4.pdf</li>
-        <li>project-grudge_part5.pdf</li>
-        <li>project-grudge_part6.pdf</li>
-        <li>project-grudge_part7.pdf</li>
-        <li>project-grudge_part8.pdf</li>
-        <li>projectsilverbug.pdf</li>
-        <li>psb_staffmtg6-25-52.pdf</li>
-        <li>psb_watchcommittee.pdf</li>
-        <li>rmwood_mufon2000.pdf</li>
-        <li>rswood_mufon2001.pdf</li>
-        <li>som101_part1.pdf</li>
-        <li>som101_part2.pdf</li>
-        <li>swords.pdf</li>
-        <li>teller-sdi-pitch-s1-00.pdf</li>
-        <li>truman_secdef.pdf</li>
-        <li>tseo_presbriefing_30sept47.pdf</li>
-        <li>twining_whitehotreport.pdf</li>
-        <li>ufo-implicationfornationsecurity.pdf</li>
-        <li>ufo-sovereignty.pdf</li>
-        <li>ufos-cia-congress-s1-00.pdf</li>
-        <li>ufotechnology-teller.pdf</li>
-      </ul>
-
-      <p class="muted">Remarque : la synthèse ci‑dessous provient d'une génération NotebookLM ; vérifier chaque source primaire avant réutilisation.</p>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    PAN Notables - Analyse de données
+    PAN Notables - Section cas ufologiques
   </footer>
 
   <script src="assets/js/main.js"></script>

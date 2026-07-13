@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAN Notables - Washington 1952</title>
+  <link rel="icon" href="../assets/images/UFO_icon.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="cases">
+  <header class="site-header"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Analyse des données MUFON / ELK</h1>
+      <p class="lede">Visualisations et analyses issues du dépôt <a href="https://github.com/ErwanDavid/ufo-data-elk" target="_blank" rel="noopener noreferrer">ufo-data-elk</a>. Images et graphiques proviennent du dépôt public.</p>
+    </section>
+ <section class="section card">
+      <h2>ufo-data-elk</h2>
+      <p class="muted">Même auteur que ce site — <a href="https://github.com/ErwanDavid/ufo-data-elk" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a></p>
+      <p>
+        Dépôt personnel dédié à l'ingestion, l'indexation et la visualisation de données sur les
+        observations d'OVNIs via une stack ELK (Elasticsearch, Logstash, Kibana).
+        Les données proviennent de sources publiques (NUFORC, Kaggle) — utilisées ici à des fins d'illustration.
+      </p>
+
+      <figure class="case-img" style="margin:1rem 0;">
+        <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_map_animated.gif"
+             alt="Carte mondiale animée des observations d'OVNIs par forme" />
+        <figcaption>Carte mondiale animée — distribution géographique des observations par forme d'objet</figcaption>
+      </figure>
+
+      <h3>Formes et périodes</h3>
+      <p>
+        En croisant la forme de l'objet signalé et la date d'observation, on observe une montée nette
+        des signalements de type <em>lumière</em> depuis 2012, ainsi qu'un pic de boules de feu en 2012–2013.
+      </p>
+      <div class="viz-grid" style="margin:0.8rem 0 1rem;">
+        <figure class="case-img" style="margin:0;">
+          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo2_date_shape_heatmap.png"
+               alt="Heatmap forme / période" />
+          <figcaption>Heatmap forme × période — montée des lumières depuis 2012</figcaption>
+        </figure>
+        <figure class="case-img" style="margin:0;">
+          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_raise_fireball.png"
+               alt="Montée des boules de feu 2012-2013" />
+          <figcaption>Histogramme — pic des boules de feu en 2012–2013</figcaption>
+        </figure>
+      </div>
+
+      <h3>Signal français dans des données américaines</h3>
+      <p>
+        Même dans un corpus à dominante américaine, le pic d'observations français de 1954 est
+        clairement visible — ce qui souligne la solidité du signal ufologique cette année-là en Europe.
+      </p>
+      <figure class="case-img" style="margin:0.8rem 0 1rem;">
+        <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_france.png"
+             alt="Pic d'observations en France en 1954" />
+        <figcaption>France — pic d'observations en 1954</figcaption>
+      </figure>
+
+      <h3>Moment de la journée et forme</h3>
+      <p>
+        La heatmap heure × forme montre sans surprise que les OVNIs sont majoritairement
+        des lumières dans le ciel nocturne — ce qui peut autant refléter un biais d'observation
+        qu'un phénomène réel.
+      </p>
+      <div class="viz-grid" style="margin:0.8rem 0 1rem;">
+        <figure class="case-img" style="margin:0;">
+          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/UFO_night_in_sky.png"
+               alt="Heatmap heure du jour / forme" />
+          <figcaption>Heatmap heure × forme — lumières nocturnes majoritaires</figcaption>
+        </figure>
+        <figure class="case-img" style="margin:0;">
+          <img src="https://raw.githubusercontent.com/ErwanDavid/ufo-data-elk/main/ressources/ufo_shape-explaination.png"
+               alt="Heatmap explication vs forme" />
+          <figcaption>Heatmap explication × forme — comment les formes sont-elles expliquées ?</figcaption>
+        </figure>
+      </div>
+
+      <h3>Sources de données utilisées</h3>
+      <ul class="list-clean">
+        <li><a href="https://nuforc.org/databank/" target="_blank" rel="noopener noreferrer">NUFORC Databank</a> — base principale de signalements civils.</li>
+        <li><a href="https://www.kaggle.com/datasets/willianoliveiragibin/ufo-sightings" target="_blank" rel="noopener noreferrer">Kaggle — UFO Sightings (willianoliveiragibin)</a></li>
+        <li><a href="https://www.kaggle.com/datasets/sahityasetu/ufo-sightings" target="_blank" rel="noopener noreferrer">Kaggle — UFO Sightings (sahityasetu)</a></li>
+      </ul>
+
+      <div class="btn-row" style="margin-top:1.2rem;">
+        <a class="btn" href="https://github.com/ErwanDavid/ufo-data-elk" target="_blank" rel="noopener noreferrer">Accéder au dépôt GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    PAN Notables — Analyse de données
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
