@@ -188,6 +188,22 @@ main {
   background: rgba(216, 182, 91, 0.05);
 }
 
+.cases-table .doc-illustration-cell {
+  padding: 0.5rem 0.8rem 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.cases-table .doc-illustration {
+  max-width: min(100%, 750px);
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: inline-block;
+}
+
 .case-name {
   font-weight: 600;
   color: var(--accent-strong);
@@ -451,6 +467,10 @@ button:hover {
   .top-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .cases-table .doc-illustration {
+    max-height: 400px;
   }
 
   .hero {
